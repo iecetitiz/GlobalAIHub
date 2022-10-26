@@ -18,8 +18,8 @@ for i in range(round_number):
 
     if player1_choice == player2_choice:
         print("Tie! Both players chose the same action")
-    elif ((player1_choice == "paper" and player2_choice == "rock")  or ((player1_choice == "scissor" and player2_choice == "paper"))
-        or ((player1_choice == "rock" and player2_choice == "scissor"))):
+    elif ((player1_choice == "paper" and player2_choice == "rock") or (player1_choice == "scissor" and player2_choice == "paper")
+        or (player1_choice == "rock" and player2_choice == "scissor")):
         print("player 1 won")
         player1_counter += 1
     else:
