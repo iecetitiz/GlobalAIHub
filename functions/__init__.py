@@ -1,3 +1,5 @@
+import myModule
+
 def greetings(name, surname, auto_correction):
     if auto_correction == True:
         capitalized_name = name.capitalize()
@@ -8,5 +10,6 @@ def greetings(name, surname, auto_correction):
 
 
 greetings("ece", "titiz", True)
+myModule.greetings_from_ece()
 
 
