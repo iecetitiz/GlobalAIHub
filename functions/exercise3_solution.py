@@ -1,5 +1,6 @@
 import seaborn as sns
 import math
+import matplotlib.pyplot as plt
 
 day = [1, 2, 3, 4, 5, 6, 7]
 avg_temperature = [14, 9, 3, 11, 18, 27, 6]
@@ -39,6 +40,11 @@ def change_current_city(new_city):
 
 change_current_city("New York")
 print_introduction(birthday, place_of_birth, current_city)
+
+day =[1, 2, 3, 4, 5, 6, 7]
+avg_temperature = [14, 9, 3, 11, 18, 27, 6]
+sns.barplot(x = day, y = avg_temperature)
+plt.show()
 
 
 def mile2km(mile):
