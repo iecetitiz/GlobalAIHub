@@ -47,11 +47,30 @@ sns.barplot(x = day, y = avg_temperature)
 plt.show()
 
 
-def mile2km(mile):
-    pass
+def mile2km(miles):
+    km = miles * 1.60934
+    return km
+
 
 def km2mile(km):
-    pass
+    miles = km / 1.60934
+    return miles
+
+def pound_kilogram(quantity, mode):
+    assert mode == "pound2kg" or mode == "kg2pound", "Invalid argument!"
+
+    if mode == "pound2kg":
+        conv_quan = quantity * 0.45354
+
+    else:
+        conv_quan = quantity / 0.45354
+        return conv_quan
+
+pound_kilogram(2, "kg2pound")
+
+assert math.isclose(pound_kilogram(2.20462, "pound2kg"), 1, abs_tol=1e-5), "Test failed for mode \"pound2kg\"!"
+assert math.isclose(pound_kilogram(43, "kg2pound"), 94.79926, abs_tol=1e-5), "Test failed for mode \"kg2pound\"!"
+print("Test passed!")
 
 
 

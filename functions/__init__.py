@@ -12,4 +12,5 @@ def greetings(name, surname, auto_correction):
 greetings("ece", "titiz", True)
 myModule.greetings_from_ece()
 
-
+a = int(3.4)
+print(a)
