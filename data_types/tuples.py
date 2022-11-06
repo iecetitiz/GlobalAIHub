@@ -14,3 +14,12 @@ print(car_list[1:3])    #i can make slice
 #just like lists, i can add different type of values
 coffee_brands = ("tchibo", "jacops", "starbucks", 12, True)
 print(coffee_brands)
+
+inventory = dict()
+inventory['bananas'] = 25
+inventory['apple'] = 45
+
+for key in inventory:
+    inventory[key] += 100
+
+print(inventory)
