@@ -15,11 +15,7 @@ print(car_list[1:3])    #i can make slice
 coffee_brands = ("tchibo", "jacops", "starbucks", 12, True)
 print(coffee_brands)
 
-inventory = dict()
-inventory['bananas'] = 25
-inventory['apple'] = 45
 
-for key in inventory:
-    inventory[key] += 100
 
-print(inventory)
+
+
